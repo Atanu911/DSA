@@ -1,0 +1,18 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    vector<int>  arr(8,-1); //index 0 to 8...
+    // int n = sizeof(arr)/4;
+   
+    for(int i = 0;i<arr.size();i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+    arr.push_back(5); //adss an element at the end..
+    arr.push_back(14); 
+    arr.pop_back(); //removes last element....
+    for(int i = 0;i<arr.size();i++){
+        cout<<arr[i]<<" ";
+    }
+}
