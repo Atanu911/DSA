@@ -5,6 +5,7 @@ int main(){
     string s = "Arjun is the smartest boy";
     int n = s.length();
     int i = 0,j = 0,maxlen = 0;
+    string ans = "";
     while(j<n){
         if(s[j] != ' ')j++;
         else {
@@ -20,6 +21,10 @@ int main(){
             }
         }
     }
+    int len = j-i;
+    if(len > maxlen){
+        maxlen = len;
+        ans = s.substr(i,len);
+    }
     cout<<maxlen<<endl;
 }
-1:16:36.lecture31
