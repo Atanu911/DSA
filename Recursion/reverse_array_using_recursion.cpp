@@ -5,7 +5,7 @@
 #include<cctype>
 using namespace std;
 void printReverseArray(vector<int>&arr,int idx){
-    if(idx==arr.size())return;
+    if(idx==arr.size())return; 
     printReverseArray(arr,idx+1);
     cout<<arr[idx]<<" ";
 }
