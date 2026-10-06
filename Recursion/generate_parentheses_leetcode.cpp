@@ -6,8 +6,8 @@ public:
             return;
 
         }
-        if(opening<n) generate(s+"(",opening+1,closing,n,ans);
-        if(closing<opening) generate(s+")",opening,closing+1,n,ans);
+        if(opening<n) generate(s+"(",opening+1,closing,n,ans);//opening.
+        if(closing<opening) generate(s+")",opening,closing+1,n,ans);//closing..
     }
     vector<string> generateParenthesis(int n) {
        vector<string>ans;
