@@ -32,6 +32,8 @@ void mergeSort(vector<int>&arr){
     mergeSort(a);
     mergeSort(b);
     merge(a,b,arr);
+    delete(&a);
+    delete(&b);
 }
 int main(){
     vector<int>arr = {5,2,8,3,7,1,4,6};
