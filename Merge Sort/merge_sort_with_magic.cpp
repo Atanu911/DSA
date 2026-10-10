@@ -22,11 +22,11 @@ void mergeSort(vector<int>&arr){
     if(n==1) return;//1 sized array is already sorted..
     vector<int>a(n/2);
     vector<int>b(n-n/2);
-    int idx =0;
+    int idx =0; // arr ke elements ke liye.
     for(int i = 0;i<n/2;i++){
         a[i]=arr[idx++];
     }
-    for(int i=0;i<n-n/2;i++){
+    for(int i=0;i<n-n/2;i++){ // b ko bharo. 
         b[i]=arr[idx++];
     }
     mergeSort(a);
