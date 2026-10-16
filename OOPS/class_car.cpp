@@ -19,4 +19,7 @@ int main(){
     c1.color = "red";
     c1.mielage = 9.2;
     c1.isE20Compatible = true;
+
+    Car c2 = {"Toyota Fortuner",6,200,"white",8.8,flase};
+    cout<<c2.power<<endl;
 }
