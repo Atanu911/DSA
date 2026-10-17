@@ -17,7 +17,7 @@ class Fraction{
     void multiply(Fraction f){
         num = num*f.num;
         den =den *f.den;
-        
+
     }
 
 };
@@ -36,3 +36,4 @@ int main(){
     f1.print();
 
 }
+1:52:33.
