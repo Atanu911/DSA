@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 class Cricketer{
     public:
@@ -25,5 +26,5 @@ int main(){
     cout<<c1.average<<endl;
     cout<<ptr->name<<endl;
     cout<<ptr->runs<<endl;
-    Cricketer * p = new Cricketer("ABD",10000,55.4);
+    Cricketer* p = new Cricketer("ABD",10000,55.4);
 }
