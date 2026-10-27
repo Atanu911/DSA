@@ -13,4 +13,3 @@ public:
         node->next = node->next->next;
     }
 };
-1:09:02..
