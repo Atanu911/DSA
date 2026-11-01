@@ -22,7 +22,8 @@ public:
     ListNode* rotateRight(ListNode* head, int k) {
         if(head == NULL or head->next == NULL) return head;
         int n = length(head);
-        k = k%n;
+        k = k%n; 
+        if(k == 0 )return head;
         ListNode* temp = head;
         ListNode* a = NULL;// k+1th node form the end..
         ListNode* b = NULL;// kth node from end(new node)..
