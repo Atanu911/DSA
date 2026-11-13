@@ -18,7 +18,14 @@ class Node{
     }
     cout<<endl;
  }
-
+void printReverse(Node* tail){
+    Node* temp = tail;
+    while(temp){ // tmep != NULL
+        cout<<temp->val<<" ";
+        temp = temp->next;
+    }
+    cout<<endl;
+}
 
 
 
@@ -33,4 +40,5 @@ int main(){
     c->next = d; d->prev = c; 
 
     print(a);
+    printReverse(b){}
 }
