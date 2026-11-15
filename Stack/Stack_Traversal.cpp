@@ -2,15 +2,43 @@
 #include <stack>
 using namespace std;
 
-void print(stack<int> st) {
-    while (st.size() != 0) {
+void printTopToBottom(stack<int> st)
+{
+    stack<int> helper;
+
+    while (st.size() != 0)
+    {
         cout << st.top() << " ";
+        helper.push(st.top());
         st.pop();
     }
     cout << endl;
+
+    // put back element from helper to st..
+
+    while (helper.size() != 0)
+    {
+        st.push(helper.top());
+        helper.pop();
+    }
 }
 
-int main() {
+void printBottomToTop(stack<int> &st){
+    stack<int> helper;
+    while(st.size() != 0){
+        helper.push(st.top());
+        st.pop();
+    }
+    while(helper.size() !=0){
+        cout<<helper.top()<< " ";
+        st.push(helper.top());
+        helper.pop();
+    }
+    cout<<endl;
+}
+
+int main()
+{
     stack<int> st;
     st.push(18);
     st.push(33);
@@ -18,7 +46,6 @@ int main() {
     st.push(45);
     st.push(7);
 
-    print(st);
-
-    print(st);
+    printTopToBottom(st);
+    printBottomToTop(st);
 }
