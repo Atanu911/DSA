@@ -1,7 +1,7 @@
-class Solution{
-      public:
-      vector<int>nextGreaterElements(vector<int>& arr){
-            int n = arr.size();
+class Solution {
+public:
+    vector<int> nextGreaterElements(vector<int>& arr) {
+        int n = arr.size();
             vector<int>ans(n,-1);
             stack<int>st;
             // put all element in the stack..
@@ -11,9 +11,9 @@ class Solution{
             for(int i=n-1;i>=0;i--){
                   while(st.size()>0 and st.top()<=arr[i]) st.pop();
                   if(st.size() == 0 ) ans[i] = -1;
-                  else if ans[i] = st.top();
+                  else ans[i] = st.top();
                   st.push(arr[i]);
             }
             return ans;
-      }
+    }
 };
